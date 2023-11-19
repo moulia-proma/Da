@@ -1,4 +1,6 @@
 package com.liilab.android_basics.presentation.screen.recyclerview
 
-class Campaign {
-}
+data class Campaign (
+    val rate: String,
+    val total: String ,val textTitle: String
+)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+
+    >
+ <group android:checkableBehavior="single">
+  <item  android:id="@+id/nav_chat"
+      android:icon="@drawable/ic_chat"
+      android:title="chat"
+      />
+
+     <item  android:id="@+id/nav_msg"
+         android:icon="@drawable/ic_chat"
+         android:title="chat"
+         />
+     <item  android:id="@+id/nav_call"
+         android:icon="@drawable/ic_chat"
+         android:title="chat"
+         />
+
+
+ </group>
+
+    <item android:title="Comminicate">
+
+        <menu>
+            <item  android:id="@+id/nav_share"
+                android:icon="@drawable/ic_chat"
+                android:title="chat"
+                />
+            <item  android:id="@+id/nav_send"
+                android:icon="@drawable/ic_chat"
+                android:title="chat"
+                />
+
+        </menu>
+
+    </item>
+</menu>

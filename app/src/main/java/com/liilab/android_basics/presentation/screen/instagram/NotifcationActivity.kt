@@ -1,13 +1,12 @@
-package com.liilab.myapplication.presentation
+package com.liilab.android_basics.presentation.screen.instagram
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.liilab.android_basics.R
 
-
-class RecyclerViewActivity : AppCompatActivity() {
+class NotifcationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recycler_view)
+        setContentView(R.layout.activity_notifcation)
     }
 }

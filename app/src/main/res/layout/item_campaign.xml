@@ -2,59 +2,74 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
 
     >
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
         app:contentPadding="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 app:srcCompat="@drawable/ic_launcher_background"
                 app:strokeColor="@color/black"
-                app:strokeWidth="2dp">
-                <!--app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerCircle20dp"-->
+                app:strokeWidth="2dp" >
+             <!--app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerCircle25dp"-->
+
+
 
             </com.google.android.material.imageview.ShapeableImageView>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="5">
 
                 <TextView
+                    android:id="@+id/text_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="Download best free sub4sub App" />
 
                 <ProgressBar
-
+                    android:id="@+id/progress_bar_download"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="#45BC52"
+                    android:layout_height="5dp"
 
-                    />
+                    android:layout_marginTop="8dp"
+
+                    android:layout_weight="3"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/progressbar"
+                    android:progressTint="#76CD47" />
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical">
 
                     <ImageView
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_marginTop="5dp"
                         android:elevation="5dp"
                         android:src="@drawable/ic_not_started">
 
@@ -65,47 +80,45 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="3dp"
-                        android:layout_marginTop="5dp"
+
                         android:text="10"
-                        android:textSize="10sp" />
+                        android:textSize="15sp" />
 
                     <TextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+
                         android:text="/"
-                        android:textSize="10sp" />
+                        android:textSize="15sp" />
 
                     <TextView
-
+                        android:id="@+id/text_total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:text="10"
-                        android:textSize="10sp" />
+                        android:textSize="15sp" />
 
-                    <com.google.android.material.card.MaterialCardView
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
                         app:cardBackgroundColor="#45BC52"
-
-                        >
+                        app:cardCornerRadius="12dp"
+                        app:contentPadding="4dp">
 
                         <TextView
                             android:id="@+id/text_status"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Completed"
-                            android:textSize="10sp"
-
-                            >
+                            android:textColor="@color/white"
+                            android:textSize="10sp">
 
                         </TextView>
 
-                    </com.google.android.material.card.MaterialCardView>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
 
