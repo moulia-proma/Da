@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+   >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ListView"
+      />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="RecyclerView"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_retrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Retrofit"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_retrofit_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="RetrofitTask"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_navigation_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="NavigationGraph"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Fragment"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_campagin_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="CampaginTask"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ui_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="UiTask"
+        />
+
+</LinearLayout>
+
