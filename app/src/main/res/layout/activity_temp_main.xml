@@ -65,6 +65,14 @@
         android:layout_gravity="center_horizontal"
         android:text="UiTask"
         />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_mvvm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="MVVMCalculator"
+        />
+
 
 </LinearLayout>
 

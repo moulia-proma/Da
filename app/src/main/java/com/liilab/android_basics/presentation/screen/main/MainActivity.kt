@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.fragment.app.FragmentActivity
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.card.MaterialCardView
+import com.liilab.android_basics.presentation.screen.MVVM.View.CalculatorActivity
 import com.liilab.android_basics.presentation.screen.NavigationGraph.NavigationActivity
 import com.liilab.android_basics.presentation.screen.Retrofit.RetrofitActivity
 import com.liilab.android_basics.presentation.screen.RetrofitTask.RetrofitTaskActivity
@@ -25,7 +26,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fragment : MaterialButton
     private lateinit var campaginTask : MaterialButton
     private lateinit var uiTask : MaterialButton
-    private lateinit var retofitTask : MaterialButton
+
+    private lateinit var mvvmCalculator : MaterialButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         campaginTask = findViewById(R.id.btn_campagin_task)
         uiTask= findViewById(R.id.btn_ui_task)
         retrofitTask= findViewById(R.id.btn_retrofit_task)
+        mvvmCalculator = findViewById(R.id.btn_mvvm)
+
          listView.setOnClickListener{
              var intent = Intent(this,ListViewActivity::class.java)
              startActivity(intent)
@@ -70,6 +74,10 @@ class MainActivity : AppCompatActivity() {
         }
         retrofitTask.setOnClickListener{
             var intent = Intent(this,RetrofitTaskActivity::class.java)
+            startActivity(intent)
+        }
+        mvvmCalculator.setOnClickListener{
+            var intent = Intent(this,CalculatorActivity::class.java)
             startActivity(intent)
         }
 
