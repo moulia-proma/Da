@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         fragment.setOnClickListener{
-            var intent = Intent(this,FragmentActivity::class.java)
+            var intent = Intent(this,com.liilab.android_basics.presentation.screen.Fragment.FragmentActivity::class.java)
             startActivity(intent)
         }
         campaginTask.setOnClickListener{
