@@ -1,16 +1,14 @@
 package com.liilab.android_basics.presentation.screen.RetrofitTask
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.liilab.android_basics.R
-import com.liilab.android_basics.presentation.screen.Retrofit.RetrofitAdaptar
 
 class RetroTaskAdapter(
-    private val context: Context,
+    private val context: RetrofitTaskActivity,
     private val data: List<informationItem>
 ) : RecyclerView.Adapter<RetroTaskAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RetroTaskAdapter.ViewHolder {

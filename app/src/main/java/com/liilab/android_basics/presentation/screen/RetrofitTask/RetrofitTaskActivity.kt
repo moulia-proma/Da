@@ -2,15 +2,11 @@ package com.liilab.android_basics.presentation.screen.RetrofitTask
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import com.liilab.android_basics.R
-import com.liilab.android_basics.presentation.screen.Retrofit.RetrofitAdaptar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
-import okhttp3.Headers
 
 class RetrofitTaskActivity : AppCompatActivity() {
     private lateinit var recyclerViewRetrofit: RecyclerView

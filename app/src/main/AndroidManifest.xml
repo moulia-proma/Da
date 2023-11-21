@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,12 +15,27 @@
         android:theme="@style/Theme.AndroidBasics"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.screen.MVVM.View.CalculatorActivity"
+            android:name=".presentation.screen.NavigatrionDrawer.NavigationDrawerActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
 
         </activity>
+        <activity
+            android:name=".presentation.screen.tablayoutWithViewPager.TablayoutActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".presentation.screen.RetrofitMvvm.View.RetrofitMvvmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.screen.MVVM.View.CalculatorActivity"
+            android:exported="true" />
         <activity
             android:name=".presentation.screen.main.TempActivity"
             android:exported="false" />
@@ -47,14 +62,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
