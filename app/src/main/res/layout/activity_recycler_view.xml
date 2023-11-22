@@ -10,10 +10,12 @@
         android:id="@+id/recycler_view_fruits"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="20"
+        tools:listitem="@layout/sale_items" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,4 +32,5 @@ class TablayoutActivity : AppCompatActivity() {
         }.attach()
 
     }
+
 }
